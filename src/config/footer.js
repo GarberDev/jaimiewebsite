@@ -1,46 +1,30 @@
 export const footerSocials = [
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
+    name: 'Instagram',
+    url: 'https://instagram.com/scvpetcare',
+    icon: "mdi:instagram",
   },
   {
     name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
+    url: 'https://youtube.com/c/scvpetcare',
     icon: "mdi:youtube",
   },
   {
-    name: 'Github',
-    url: 'https://github.com/littlesticks',
-    icon: "mdi:github",
+    name: 'Facebook',
+    url: 'https://facebook.com/scvpetcare',
+    icon: "mdi:facebook",
   },
   {
-    name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
-    icon: "ic:baseline-discord",
+    name: 'Google',
+    url: 'https://g.page/r/CQtDVkXRzyr6EBE/',
+    icon: "mdi:google",
   },
 ]
 
 export const footerLists = [
+
 	{
-		title: 'Landing Pages',
-		items: [
-			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
-			},
-			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
-			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
-		],
-	},
-	{
-		title: 'Company',
+		title: 'Jaimie Garber',
 		items: [
 			{
 				title: 'About',
@@ -57,22 +41,22 @@ export const footerLists = [
 		],
 	},
 	{
-		title: 'Theme',
+		title: 'Useful Links',
 		items: [
 			{
-				title: 'Get Started',
+				title: 'Certifide Council of Professional Dog Trainers',
 				slug: '/theme/get-started',
 			},
 			{
-				title: 'Style Guide',
+				title: 'America Teaching Zoo',
 				slug: '/theme/style-guide',
 			},
       {
-        title: 'Theme Setup',
+        title: 'Amazon Store',
         slug: '/theme/theme-setup',
       },
       {
-        title: 'Customizing Odyssey',
+        title: 'link 4',
         slug: '/theme/customizing-odyssey',
       }
 		],
