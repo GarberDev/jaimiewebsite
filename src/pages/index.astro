@@ -1,0 +1,131 @@
+---
+import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
+
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+
+import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Landing Page #1 | Astro Odyssey Theme',
+	description: 'Landing Page #1 | Astro Odyssey Theme',
+};
+---
+
+<!-- <AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/> -->
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Professional Dog training</h1>
+			<p>Santa Clarita's experienced & certified dog trainer.</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="/theme/get-started" customIcon
+				>Get Started<Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/landing-1/landing-hero-1.jpg"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+	<CustomerQuoteSection
+		quoteText="Jaimie is exceptional at caring and training dogs. She listened to our concerns and needs. She had patience with us and the dogs. We saw immediant results by using the training tools she gave us. Clear communication and flexible scheduling."
+		customerName="Happy Customer"
+	/>
+
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>Why?</h2>
+			<p>
+				Proper training is the key to a well-adjusted, happy pet. As your dedicated dog trainer, I focus on strengthening your bond with your furry companion, teaching them essential commands, and curbing any negative behavior. Let's nurture a harmonious relationship together.
+			</p>
+		</div>
+		<Button slot="column-1-cta">Learn More</Button>
+		<div slot="column-2-body">
+			<h2>How?</h2>
+			<p>
+				As a certified dog trainer, I use a combination of positive reinforcement and assertive techniques, individually tailored to your dog's unique personality and requirements. Witness the transformative journey as your dog grows and learns under expert guidance.
+			</p>
+		</div>
+		<Button slot="column-2-cta" outlined>Learn More</Button>
+		<div slot="column-3-body">
+			<h2>What?</h2>
+			<p>
+				From basic obedience to advanced trick training, my comprehensive programs cater to dogs of all breeds and ages. I offer in-home, group, and private sessions, all while prioritizing your convenience and your pet's comfort. Gift your canine companion the advantage of good manners.
+			</p>
+		</div>
+		<Button slot="column-3-cta">Learn More</Button>
+	</ThreeColumnTextSection>
+
+	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=uYJQIKAVBw8" rounded />
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>Qualifications</h2>
+      <h3>Certification for Professional Dog Trainers</h3>
+      <p>
+        A Dog Trainer Certified by the Certification Council for Professional Dog Trainers is an esteemed certification is a testament to a trainer's comprehensive understanding of canine behavior and proven training techniques. With such a professional, you are ensuring your dog receives a high-quality, scientifically-informed, and humane approach to training.
+      </p>
+      <h3>Teaching Zoo at Moorpark College</h3>
+        <p>
+			Equipped with hands-on animal behavior knowledge and experience, these graduates bring a unique, multifaceted approach to dog training. Their broad educational background ensures a thorough understanding of your dog's needs and the best methods to address them.
+      </p>
+      <h3>Veterinary Experinced</h3>
+        <p>
+			A trainer with extensive veterinary experience has a profound understanding of your pet's health, behavior, and overall wellbeing. This blend of medical and behavioral knowledge helps design a balanced, safe, and effective training program tailored to your dog's specific needs.
+      </p>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/landing-1/landing-sticky.jpg"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+
+  <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+    <h2>Start Your Dog Training today!</h2>
+    <p>Contact Us for information on dog training.</p>
+    <Button href="/theme/get-started" customIcon>Get Started <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment></Button>
+  </CtaCardSection>
+
+</Layout>
+
+
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
