@@ -36,19 +36,19 @@ export const footerLists = [
 		items: [
 			{
 				title: 'Certifide Council of Professional Dog Trainers',
-				slug: '/theme/get-started',
+				slug: 'https://www.ccpdt.org/',
 			},
 			{
 				title: 'America Teaching Zoo',
-				slug: '/theme/style-guide',
+				slug: 'https://www.moorparkcollege.edu/current-students/teaching-zoo/home',
 			},
 			{
 				title: 'Amazon Store',
-				slug: '/theme/theme-setup',
+				slug: 'amazon.com',
 			},
 			{
 				title: 'link 4',
-				slug: '/theme/customizing-odyssey',
+				slug: 'www.google.com',
 			},
 		],
 	},
