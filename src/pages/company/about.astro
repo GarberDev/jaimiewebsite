@@ -2,6 +2,8 @@
 import { TextSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import { Button } from '@littlesticks/odyssey-theme-components';
+import {Icon} from 'astro-icon';
 
 const seo = {
 	title: 'About | Astro Odyssey Theme',
@@ -16,10 +18,19 @@ const seo = {
 			<p>
 				Santa Clarita native Jaimie Garber, certified by the Council for Professional Dog Trainers, passionately provides comprehensive pet care, specializing in strengthening the bond between pets and owners. She cherishes her roles as a professional, wife, and mother.
 			</p>
+      <div style="display: flex; align-items: center; gap: 1rem;"> 
+
+        <Button href="mailto:scvpetcare@gmail.com" customIcon>scvpetcare@gmail.com<Fragment slot="icon">
+      
+          <Button  href="tel:6617143945" customIcon>Call
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-chevron-right"/>
+          </Fragment></Button>
+      </div>
 		</div>
     <picture slot="image-container">
       <img
-        src="../public/assets/images/aboutmeimage.jpg"
+        src="../assets/images/aboutmeimage.jpg"
         alt="Jaimie Garber" 
         id="home-hero-image"
       />
@@ -39,6 +50,14 @@ const seo = {
     <p>Alongside this fulfilling professional journey, I am blissfully married to my incredible partner, Justin Garber. He has been a pillar of support, a cheerleader, and a partner in every sense. But our family doesn't end there. We are the proud parents of two beautiful children, our most precious treasures. Navigating through the roles of a professional, a wife, and a mother can be challenging, but the joy and fulfillment it brings are incomparable. Each role has its demands, its unique charm, and I wouldn’t have it any other way.</p>
     
     <p>Every morning, I wake up looking forward to another day of serving my community, making a difference in the lives of animals and their owners, and cherishing precious moments with my family. These are the threads that weave the tapestry of my life - one that's rich with purpose, love, and an enduring commitment to the creatures that share our world.</p>
+    <div style="display: flex; align-items: center; gap: 1rem;"> 
+
+      <Button href="mailto:scvpetcare@gmail.com" customIcon>scvpetcare@gmail.com<Fragment slot="icon">
     
+        <Button  href="tel:6617143945" customIcon>Call
+        <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button>
+    </div>
   </TextSection>
 </Layout>
