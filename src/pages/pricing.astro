@@ -1,0 +1,63 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import { Button } from '@littlesticks/odyssey-theme-components';
+import {Icon} from 'astro-icon';
+
+const seo = {
+  title: `Pricing | SCV Pet Care`,
+  description: `Pricings`,
+};
+---
+<Layout seo={seo}>
+    <TextSection narrow>
+      <h1>In-Home Dog Training</h1>
+  
+      <p> I offer personalized in-home dog training designed to fit your dog's unique needs and your lifestyle.  I come to you, making training convenient and comfortable for both you and your furry friend.</p>
+  
+      <h2>Pricing</h2>
+  
+      <ul>
+        <li><b>Single Session:</b> $200</li>
+        <li><b>Package of 4 Sessions:</b> $600 (Save $200!)</li> 
+        <li><b>Multi-Dog Charge:</b> $50 (per session)</li> 
+
+      </ul>
+  
+      <h2>What's Included</h2>
+  
+      <p>Each session is tailored to your dog's specific needs and may include:</p>
+  
+      <ul>
+        <li>Basic obedience commands (sit, stay, come, down)</li>
+        <li>Leash training</li>
+        <li>Potty training</li>
+        <li>Addressing behavioral issues (jumping, chewing, barking)</li>
+        <li>Customized training plan</li>
+        <li>Ongoing support and guidance</li>
+      </ul>
+  
+      <h2>Why Choose In-Home Training?</h2>
+  
+      <ul>
+        <li><b>Convenience:</b> No need to travel to a training facility.</li>
+        <li><b>Personalized Attention:</b>  Focused training tailored to your dog.</li>
+        <li><b>Reduced Stress:</b>  Training in a familiar environment.</li>
+        <li><b>Address Specific Issues:</b>  Target problem behaviors in your home.</li>
+      </ul>
+  
+      <h2>Get Started</h2>
+  
+      <p>Contact me today to schedule a free consultation and discuss your dog training goals. </p> 
+  
+      <div style="display: flex; align-items: center; gap: 1rem;"> 
+
+        <Button href="mailto:scvpetcare@gmail.com" customIcon>scvpetcare@gmail.com<Fragment slot="icon">
+      
+          <Button  href="tel:6617143945" customIcon>Call
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-chevron-right"/>
+          </Fragment></Button>
+      </div>
+    </TextSection>
+  </Layout>

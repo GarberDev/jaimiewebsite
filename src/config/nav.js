@@ -5,7 +5,20 @@ export const nav = [
 	},
 	{
 		title: 'About',
-		slug: '/company/about',
+		slug: '/about',
 	},
+	{
+		title: 'Pricing',
+		slug: '/pricing',
+	},
+	// {
+	// 	title: 'Product Links',
+	// 	slug: '/products',
+	// },
+	// {
+	// 	title: 'Reviews',
+	// 	slug: '/reviews',
+	// },
+
 	{},
 ];
