@@ -11,6 +11,7 @@ export const nav = [
 		title: 'Pricing',
 		slug: '/pricing',
 	},
+
 	// {
 	// 	title: 'Product Links',
 	// 	slug: '/products',

@@ -1,0 +1,46 @@
+---
+import ContactForm from '../components/forms/ContactForm.astro';
+import Layout from '../layouts/Page.astro';
+import { Container } from '@littlesticks/odyssey-theme-components';
+
+const seo = {
+	title: 'Contact | SCV Pet Care',
+	description: 'Contact Page',
+};
+---
+
+<Layout seo={seo}>
+    <div>
+        <p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHW93aHFavGfDGrlhNpkgoRbSEE9CVy5LbkOAMS6jL4aA2hA/viewform?embedded=true" width="640" height="2102" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </p>
+    </div>
+</Layout>
+
+<style>
+	.contact-hero__section {
+            margin: var(--section-margin) auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: calc(90vh - var(--navbar-height));
+            gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
