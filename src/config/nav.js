@@ -8,6 +8,10 @@ export const nav = [
 		slug: '/about',
 	},
 	{
+		title: 'Reviews',
+		slug: '/reviews',
+	},
+	{
 		title: 'Pricing',
 		slug: '/pricing',
 	},
@@ -15,10 +19,6 @@ export const nav = [
 	// {
 	// 	title: 'Product Links',
 	// 	slug: '/products',
-	// },
-	// {
-	// 	title: 'Reviews',
-	// 	slug: '/reviews',
 	// },
 
 	{},
